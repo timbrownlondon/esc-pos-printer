@@ -2,10 +2,15 @@ Plug in the receipt printer
 The OS detects it as USP device
 crw-rw---- 1 root lp 180, 0 Apr  5 18:05 /dev/usb/lp0
 
+OSX doesn't appear to detct the printer
+
 Make sure you are in the lp group, e.g.
 $ sudo usermod -a -G lp tim
 
 Then log out and back in so that group membership is active
+
+try...
+date > /dev/usp/lp0
 
 
 
