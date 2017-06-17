@@ -12,5 +12,9 @@ Then log out and back in so that group membership is active
 try...
 date > /dev/usp/lp0
 
-
+print an image...
+convert hand.jpg -resize 384 hand.png
+scruss/esc-pos-image.py hand.png > hand.pos
+cat hand.pos > /dev/usb/lp0
+echo > /dev/usb/lp0
 
